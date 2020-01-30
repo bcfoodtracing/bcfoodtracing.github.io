@@ -1,2 +1,20 @@
-<view> {{ msg }} </view>
-<button bindtap="click">clickme</button>
+<!--index.wxml-->
+<view class="container">
+  
+  <input type="text" class="input" bindinput='input_barcode'/>
+  <button bindtap="search">点击查询</button>
+  <view>{{ result }}</view>
+  <label>上传</label>
+
+  <input type="text" class="inp" id="inp_name" bindinput="inp_name" placeholder="输入食品名称" />
+  <input type="text" class="inp" id="inp_barcode" bindinput="inp_barcode" placeholder="输入条码" />
+  <input type="text" class="inp" id="inp_prodate" bindinput="inp_prodate" placeholder="输入生产日期:XXXX-XX-XX" />
+  <input type="text" class="inp" id="inp_keepdays" bindinput="inp_keepdays" placeholder="输入保质期天数" />
+  <input type="text" class="inp" id="inp_keepmonths" bindinput="inp_keepmonths" placeholder="输入保质期月数" />
+  <input type="text" class="inp" id="inp_producername" bindinput="inp_producername" placeholder="输入生产厂商名称" />
+  <input type="text" class="inp" id="inp_producerlocation" bindinput="inp_producerlocation" placeholder="输入生产厂商详细地址" />
+  <input type="text" class="inp" id="inp_pspecification" bindinput="inp_pspecification" placeholder="输入产品规格" />
+  <button bindtap="update_info">点击上传</button>
+<view>{{ update_res }}</view>
+</view>
+
